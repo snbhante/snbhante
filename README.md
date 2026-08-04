@@ -1,4 +1,4 @@
-<!-- **sarbanandabhikkhu/sarbanandabhikkhu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile. -->
+<!-- **snbhante/snbhante** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile. -->
 
 <div align="center">
 
@@ -14,23 +14,23 @@ I am more interested in Buddhism and Buddhist literature.
 I would like to work on it in the future and desire to do something related to Buddhism on digital platform.
 I practice coding in my spare time and I believe that I have acquired enough coding knowledge to run a job.
 I always have a passion to learn and know something new.
-I also want to work as a content creator on [Youtube](https://www.youtube.com/@sarbanandabhikkhu) in the future.
+I also want to work as a content creator on [Youtube](https://www.youtube.com/@snbhante) in the future.
 
 <!--**Here's a List of things I am currently keeping myself busy with:**-->
 <!--  - 🌱 Helping solve local community problems by building <ins>**Applications**</ins> and <ins>**Development**</ins> that bring impact on people lifes.-->
 <!--  - 🛠  I’m currently learning and Upgrading with modern technologies like <ins>JavaScript</ins>, <ins>TypeScript</ins>, <ins>React</ins>, <ins>React Native</ins>, <ins>NodeJS</ins> ect.-->
 <!--  - ✍️ Writing tech blog posts over my **[Blog Page](http://sammapanna.blogspot.com/)** to help more developers learn from my experience.-->
-<!--  - 💻 In my free time I do Competitive Programming, find me here **[CodeChef](https://www.codechef.com/users/sarbanandabhikkhu)**, **[CodeForces](https://codeforces.com/profile/sarbanandabhikkhu)** and **[AtCoder](https://atcoder.jp/users/sarbanandabhikkhu)**.-->
-<!--  - ⚡ To know more headout to my **[Portfolio](http://sarbanandabhikkhu.github.io/sarbanandabhikkhu)**.-->
+<!--  - 💻 In my free time I do Competitive Programming, find me here **[CodeChef](https://www.codechef.com/users/snbhante)**, **[CodeForces](https://codeforces.com/profile/snbhante)** and **[AtCoder](https://atcoder.jp/users/snbhante)**.-->
+<!--  - ⚡ To know more headout to my **[Portfolio](http://snbhante.github.io/snbhante)**.-->
 <!--  - 📖 💭 When I'm not coding, find me on the online library reading books or research!😉<br>-->
 
 **Support & connect with me!**
 
-[![Youtube](https://img.shields.io/badge/Subscribe-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com/@sarbanandabhikkhu)
-[![G-Mail](https://img.shields.io/badge/Send_Mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sarbanandabhikkhu@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-blue?style=for-the-badge&logo=github)](https://sarbanandabhikkhu.github.io)
+[![Youtube](https://img.shields.io/badge/Subscribe-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com/@snbhante)
+[![G-Mail](https://img.shields.io/badge/Send_Mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:snbhante@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-blue?style=for-the-badge&logo=github)](https://snbhante.github.io)
 
-<!--**<a href="https://ko-fi.com/sarbanandabhikkhu">☕ Buy me a coffee</a>**-->
+<!--**<a href="https://ko-fi.com/snbhante">☕ Buy me a coffee</a>**-->
 
 <!--[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/)-->
 <!--[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)-->
@@ -111,29 +111,29 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 
 ## 📈 Github Stats
 
-[![Repo](https://img.shields.io/static/v1?label=Repo&message=sarbanandabhikkhu&color=blue&logo=github)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu "Go to GitHub repo")
+[![Repo](https://img.shields.io/static/v1?label=Repo&message=snbhante&color=blue&logo=github)](https://github.com/snbhante/snbhante "Go to GitHub repo")
 [![License](https://img.shields.io/badge/License-MIT-blue?color=blue&logo=github)](#license)
-[![CI](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/workflows/CI/badge.svg)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/actions?query=workflow:"CI")
-[![Latest YouTube Videos](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/actions/workflows/youtube-workflow.yml/badge.svg)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/actions/workflows/youtube-workflow.yml)
+[![CI](https://github.com/snbhante/snbhante/workflows/CI/badge.svg)](https://github.com/snbhante/snbhante/actions?query=workflow:"CI")
+[![Latest YouTube Videos](https://github.com/snbhante/snbhante/actions/workflows/youtube-workflow.yml/badge.svg)](https://github.com/snbhante/snbhante/actions/workflows/youtube-workflow.yml)
 
-[![Stars](https://img.shields.io/github/stars/sarbanandabhikkhu/sarbanandabhikkhu?style=social)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/stars)
-[![Forks](https://img.shields.io/github/forks/sarbanandabhikkhu/sarbanandabhikkhu?style=social)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/forks)
-[![Issues](https://img.shields.io/github/issues/sarbanandabhikkhu/sarbanandabhikkhu?style=social&logo=github)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/issues)
-[![Tag](https://img.shields.io/github/tag/sarbanandabhikkhu/sarbanandabhikkhu?style=social&logo=github&include_prereleases=&sort=semver)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/releases/)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=sarbanandabhikkhu.sarbanandabhikkhu&left_text=Visitors)](https://github.com/hehuapei/visitor-badge)
+[![Stars](https://img.shields.io/github/stars/snbhante/snbhante?style=social)](https://github.com/snbhante/snbhante/stars)
+[![Forks](https://img.shields.io/github/forks/snbhante/snbhante?style=social)](https://github.com/snbhante/snbhante/forks)
+[![Issues](https://img.shields.io/github/issues/snbhante/snbhante?style=social&logo=github)](https://github.com/snbhante/snbhante/issues)
+[![Tag](https://img.shields.io/github/tag/snbhante/snbhante?style=social&logo=github&include_prereleases=&sort=semver)](https://github.com/snbhante/snbhante/releases/)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=snbhante.snbhante&left_text=Visitors)](https://github.com/hehuapei/visitor-badge)
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
     <img width="100%"
-      src="https://github-readme-stats.vercel.app/api?username=sarbanandabhikkhu&show_icons=true&theme=react&border_color=61dafb&hide_border=true&include_all_commits=true&count_private=true"/>
+      src="https://github-readme-stats.vercel.app/api?username=snbhante&show_icons=true&theme=react&border_color=61dafb&hide_border=true&include_all_commits=true&count_private=true"/>
   </a>
   <br/>
   <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
     <img width="100%" alt="Some Records"
-      src="https://github-readme-streak-stats.herokuapp.com/?user=sarbanandabhikkhu&theme=react&border=61dafb&hide_border=true"/>
+      src="https://github-readme-streak-stats.herokuapp.com/?user=snbhante&theme=react&border=61dafb&hide_border=true"/>
   </a>
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarbanandabhikkhu&layout=compact&theme=react&border_color=61dafb&hide_border=true&langs_count=10"/>
+    <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=snbhante&layout=compact&theme=react&border_color=61dafb&hide_border=true&langs_count=10"/>
   </a>
 </div>
 
@@ -142,7 +142,7 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 <div align="center">
 
 [![Markdown Guide](https://img.shields.io/badge/View_Site-Markdown-blue?style=for-the-badge&labelColor=555555&logo=markdown)](https://www.markdownguide.org/basic-syntax/)
-[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/sarbanandabhikkhu/sarbanandabhikkhu/generate)
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/snbhante/snbhante/generate)
 
 <!--[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")-->
 <!--[![Markdown - Badge Generator](https://img.shields.io/badge/Markdown-Badge_Generator-2ea44f?style=for-the-badge&logo=markdown&logoColor=white)](https://michaelcurrin.github.io/badge-generator/)-->
@@ -153,7 +153,7 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 
 <div align="center">
 
-Released under [MIT](/LICENSE) by [@sarbanandabhikkhu](https://github.com/sarbanandabhikkhu).
+Released under [MIT](/LICENSE) by [@snbhante](https://github.com/snbhante).
 
 </div>
 
@@ -164,10 +164,10 @@ Released under [MIT](/LICENSE) by [@sarbanandabhikkhu](https://github.com/sarban
 **Let's connect and chat!</h3>**
 
   <P>
-    <!--<a href="https://www.linkedin.com/in/sarbanandabhikkhu/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>-->
-    <!--<a href="https://twitter.com/sarbanandabhikkhu" alt="Twitter"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/twitter-fill.svg"></a>-->
-    <a href="mailto:sarbanandabhikkhu@gmail.com" alt="Contact me"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/mail-fill.svg"></a>
-    <a href="https://sarbanandabhikkhu.github.io" alt="My Portfolio"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/external-link-line.svg"></a>
+    <!--<a href="https://www.linkedin.com/in/snbhante/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>-->
+    <!--<a href="https://twitter.com/snbhante" alt="Twitter"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/twitter-fill.svg"></a>-->
+    <a href="mailto:snbhante@gmail.com" alt="Contact me"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/mail-fill.svg"></a>
+    <a href="https://snbhante.github.io" alt="My Portfolio"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/external-link-line.svg"></a>
   </P>
   
   <img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/dcd7447c179f5a1131590b6ccba2223e879ab655/readme/bottom.svg" alt="Bottom SVG">
