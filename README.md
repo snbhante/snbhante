@@ -102,11 +102,11 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 ## 📺 Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [Why Pancha Sila Practice is Essential for Us](https://www.youtube.com/watch?v=_iToMbpzq6w)
+- [Sample AI Generated Video](https://www.youtube.com/watch?v=hFlPi_kBMy0)
 - [Friday: Aṭānāṭiya Suttaṃ @snbhante](https://www.youtube.com/watch?v=auzVvgb6ZYQ)
 - [Thursday: Dhajagga Parittaṃ @snbhante](https://www.youtube.com/watch?v=ZCS8-2D4w5I)
 - [Wednesday &lpar;Evening&rpar;: Mora Parittaṃ, Vattaka Parittaṃ &amp; Sībalī Parittaṃ @snbhante](https://www.youtube.com/watch?v=ElsmKE28gCg)
-- [Wednesday &lpar;Morning&rpar;: Mora Parittaṃ, Vattaka Parittaṃ &amp; Sībalī Parittaṃ @snbhante](https://www.youtube.com/watch?v=3h225exaI3w)
-- [Tuesday: Karaṇīyametta Suttaṃ &amp; Khandha Parittaṃ @snbhante](https://www.youtube.com/watch?v=ubQeCnK1i1M)
 <!-- YOUTUBE:END -->
 
 ## 📈 Github Stats
