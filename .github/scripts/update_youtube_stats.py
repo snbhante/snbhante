@@ -12,9 +12,6 @@ README_PATH = ROOT / "README.md"
 API_KEY = os.environ.get("YOUTUBE_API_KEY")
 CHANNEL_ID = os.environ.get("YOUTUBE_CHANNEL_ID", "UC3WIwB7nbYMEvWW4CGQGYsA")
 
-if not API_KEY:
-    raise SystemExit("YOUTUBE_API_KEY is not set. Add it as a GitHub repository secret.")
-
 
 def fetch_json(url: str):
     req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -151,5 +148,19 @@ def update_readme():
     print(json.dumps(stats, indent=2))
 
 
+def main() -> int:
+    if not API_KEY:
+        print("YOUTUBE_API_KEY is not set. Skipping YouTube stats update.")
+        return 0
+
+    try:
+        update_readme()
+    except Exception as exc:  # pragma: no cover - executed in GitHub Actions
+        print(f"Failed to update YouTube stats: {exc}", file=sys.stderr)
+        return 0
+
+    return 0
+
+
 if __name__ == "__main__":
-    update_readme()
+    raise SystemExit(main())
