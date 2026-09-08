@@ -132,7 +132,7 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 
 [![Repo](https://img.shields.io/static/v1?label=Repo&message=snbhante&color=blue&logo=github)](https://github.com/snbhante/snbhante "Go to GitHub repo")
 [![License](https://img.shields.io/badge/License-MIT-blue?color=blue&logo=github)](#license)
-[![YouTube Channel Stats](https://github.com/snbhante/snbhante/actions/workflows/youtube-channel-stats.yml/badge.svg)](https://github.com/snbhante/snbhante/actions/workflows/youtube-channel-stats.yml)
+[![Update YouTube Stats](https://github.com/snbhante/snbhante/actions/workflows/update_youtube_stats.yml/badge.svg)](https://github.com/snbhante/snbhante/actions/workflows/update_youtube_stats.yml)
 [![CI](https://github.com/snbhante/snbhante/actions/workflows/ci.yml/badge.svg)](https://github.com/snbhante/snbhante/actions/workflows/ci.yml)
 
 [![Stars](https://img.shields.io/github/stars/snbhante/snbhante?style=social)](https://github.com/snbhante/snbhante/stars)
