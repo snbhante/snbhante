@@ -99,16 +99,6 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 <!--<a href="https://www.youtube.com/channel/UC3WIwB7nbYMEvWW4CGQGYsA?sub_confirmation=1"><img alt="youtube subscribers" title="Subscribe to my YouTube channel" src="https://freshidea.com/jonah/youtube-api/subscribers-badge.php?label=Subscribers&style=for-the-badge&color=red&labelColor=ce4630"/></a>-->
 <!--<a href="https://www.youtube.com/channel/UC3WIwB7nbYMEvWW4CGQGYsA"><img alt="youtube views" title="YouTube views" src="https://freshidea.com/jonah/youtube-api/view-count-badge.php?label=View+Count&style=for-the-badge&color=blue&labelColor=0b689d"/></a>-->
 
-## 📺 Latest YouTube Videos
-
-<!-- YOUTUBE:START -->
-- [Why Pancha Sila Practice is Essential for Us](https://www.youtube.com/watch?v=_iToMbpzq6w)
-- [Sample AI Generated Video](https://www.youtube.com/watch?v=hFlPi_kBMy0)
-- [Friday: Aṭānāṭiya Suttaṃ @snbhante](https://www.youtube.com/watch?v=auzVvgb6ZYQ)
-- [Thursday: Dhajagga Parittaṃ @snbhante](https://www.youtube.com/watch?v=ZCS8-2D4w5I)
-- [Wednesday &lpar;Evening&rpar;: Mora Parittaṃ, Vattaka Parittaṃ &amp; Sībalī Parittaṃ @snbhante](https://www.youtube.com/watch?v=ElsmKE28gCg)
-<!-- YOUTUBE:END -->
-
 ---
 
 ## 📊 YouTube Channel Stats
