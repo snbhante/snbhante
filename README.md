@@ -49,7 +49,7 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 <a href="https://github.com/"><img height="40" src="assets/icons/github.svg"></a>
 <a href="https://nodejs.org/en/"><img height="40" src="assets/icons/nodejs.svg"></a>
 <a href="https://reactjs.org/"><img height="40" src="assets/icons/react.svg"></a>
-<a href="https://redux.js.org/"><img height="40" src="assets/icons/redux.svg">
+<a href="https://redux.js.org/"><img height="40" src="assets/icons/redux.svg"></a>
 <a href="https://nextjs.org/"><img height="40" src="assets/icons/nextjs.svg"></a>
 <a href="https://expressjs.com/"><img height="40" src="assets/icons/express.svg"></a>
 <a href="https://mongodb.com/"><img height="40" src="assets/icons/mongodb.svg"></a>
@@ -109,12 +109,41 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 - [Wednesday &lpar;Evening&rpar;: Mora Parittaṃ, Vattaka Parittaṃ &amp; Sībalī Parittaṃ @snbhante](https://www.youtube.com/watch?v=ElsmKE28gCg)
 <!-- YOUTUBE:END -->
 
+---
+
+## 📊 YouTube Channel Stats
+<p align="center">
+  <img src="https://img.shields.io/youtube/channel/subscribers/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Subscribers&logo=youtube&color=red">
+  <img src="https://img.shields.io/youtube/channel/views/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Total Views&logo=youtube&color=red">
+  <img src="https://img.shields.io/youtube/channel/video-count/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Videos&logo=youtube&color=red">
+</p>
+
+---
+
+## 🎬 Latest YouTube Videos
+| Date | Title | Duration | Views |
+|------|-------|----------|-------|
+| {{ video.date }} | {{ video.title }} | {{ video.duration }} | {{ video.views }} |
+
+---
+
+## 📚 Playlists
+- {{ playlist.title }} — {{ playlist.videoCount }} videos
+
+---
+
+## 📝 Latest Community Post
+> "{{ post.text }}"
+*(Posted {{ post.date }})*
+
+---
+
 ## 📈 Github Stats
 
 [![Repo](https://img.shields.io/static/v1?label=Repo&message=snbhante&color=blue&logo=github)](https://github.com/snbhante/snbhante "Go to GitHub repo")
 [![License](https://img.shields.io/badge/License-MIT-blue?color=blue&logo=github)](#license)
-[![CI](https://github.com/snbhante/snbhante/workflows/CI/badge.svg)](https://github.com/snbhante/snbhante/actions?query=workflow:"CI")
-[![Latest YouTube Videos](https://github.com/snbhante/snbhante/actions/workflows/youtube-workflow.yml/badge.svg)](https://github.com/snbhante/snbhante/actions/workflows/youtube-workflow.yml)
+[![CI](https://github.com/snbhante/snbhante/actions/workflows/ci.yml/badge.svg)](https://github.com/snbhante/snbhante/actions/workflows/ci.yml)
+[![Latest YouTube Videos](https://github.com/snbhante/snbhante/actions/workflows/latest-youTube-videos.yml/badge.svg)](https://github.com/snbhante/snbhante/actions/workflows/latest-youTube-videos.yml)
 
 [![Stars](https://img.shields.io/github/stars/snbhante/snbhante?style=social)](https://github.com/snbhante/snbhante/stars)
 [![Forks](https://img.shields.io/github/forks/snbhante/snbhante?style=social)](https://github.com/snbhante/snbhante/forks)
