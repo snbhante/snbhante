@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Fetch YouTube data
-        uses: DenverCoder1/github-readme-youtube-stats@main
+        uses: DenverCoder1/github-readme-youtube-stats@master
         with:
           channel_id: UC3WIwB7nbYMEvWW4CGQGYsA   # replace with your channel ID
           output_file: README.md
