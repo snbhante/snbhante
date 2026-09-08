@@ -10,20 +10,22 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch YouTube data
-        uses: DenverCoder1/github-readme-youtube-stats@master
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          channel_id: UC3WIwB7nbYMEvWW4CGQGYsA   # replace with your channel ID
-          output_file: README.md
-          template_file: README.md
-          max_videos: 6
-          include_playlists: true
-          include_posts: true
-          include_statistics: true   # adds subs, views, video count
+          python-version: '3.11'
+
+      - name: Update README with YouTube stats
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_CHANNEL_ID: UC3WIwB7nbYMEvWW4CGQGYsA
+        run: |
+          python .github/scripts/update_youtube_stats.py
 
       - name: Commit and push changes
         run: |
