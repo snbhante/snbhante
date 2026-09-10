@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 import json
+import html
 import os
 import re
 import sys
 from datetime import datetime
 from pathlib import Path
+from urllib.error import HTTPError, URLError
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -15,8 +18,25 @@ CHANNEL_ID = os.environ.get("YOUTUBE_CHANNEL_ID", "UC3WIwB7nbYMEvWW4CGQGYsA")
 
 def fetch_json(url: str):
     req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urlopen(req, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urlopen(req, timeout=30) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError, json.JSONDecodeError) as exc:
+        raise RuntimeError(f"YouTube API request failed: {exc}") from exc
+    if "error" in data:
+        raise RuntimeError(f"YouTube API returned an error: {data['error']}")
+    return data
+
+
+def api_url(resource: str, **params: str) -> str:
+    params["key"] = API_KEY or ""
+    return f"https://www.googleapis.com/youtube/v3/{resource}?{urlencode(params)}"
+
+
+def markdown_text(value: str) -> str:
+    return html.escape(
+        str(value).replace("\r", " ").replace("\n", " ").replace("|", r"\|")
+    )
 
 
 def iso_to_date(value: str) -> str:
@@ -44,11 +64,7 @@ def iso_duration_to_minutes(value: str) -> str:
 
 
 def get_channel_stats():
-    url = (
-        "https://www.googleapis.com/youtube/v3/channels"
-        f"?part=statistics&id={CHANNEL_ID}&key={API_KEY}"
-    )
-    data = fetch_json(url)
+    data = fetch_json(api_url("channels", part="statistics", id=CHANNEL_ID))
     items = data.get("items", [])
     if not items:
         return {"subscribers": "N/A", "views": "N/A", "videos": "N/A"}
@@ -61,21 +77,28 @@ def get_channel_stats():
 
 
 def get_latest_video():
-    search_url = (
-        "https://www.googleapis.com/youtube/v3/search"
-        f"?part=snippet&channelId={CHANNEL_ID}&maxResults=1&order=date&type=video&key={API_KEY}"
+    search_data = fetch_json(
+        api_url(
+            "search",
+            part="snippet",
+            channelId=CHANNEL_ID,
+            maxResults="1",
+            order="date",
+            type="video",
+        )
     )
-    search_data = fetch_json(search_url)
     items = search_data.get("items", [])
     if not items:
         return {"date": "N/A", "title": "N/A", "duration": "N/A", "views": "N/A"}
 
     video_id = items[0]["id"]["videoId"]
-    video_url = (
-        "https://www.googleapis.com/youtube/v3/videos"
-        f"?part=snippet,contentDetails,statistics&id={video_id}&key={API_KEY}"
+    video_data = fetch_json(
+        api_url(
+            "videos",
+            part="snippet,contentDetails,statistics",
+            id=video_id,
+        )
     )
-    video_data = fetch_json(video_url)
     details = video_data.get("items", [{}])[0]
     snippet = details.get("snippet", {})
     content = details.get("contentDetails", {})
@@ -89,11 +112,14 @@ def get_latest_video():
 
 
 def get_latest_playlist():
-    url = (
-        "https://www.googleapis.com/youtube/v3/playlists"
-        f"?part=snippet,contentDetails&channelId={CHANNEL_ID}&maxResults=1&key={API_KEY}"
+    data = fetch_json(
+        api_url(
+            "playlists",
+            part="snippet,contentDetails",
+            channelId=CHANNEL_ID,
+            maxResults="1",
+        )
     )
-    data = fetch_json(url)
     items = data.get("items", [])
     if not items:
         return {"title": "N/A", "videoCount": "N/A"}
@@ -105,11 +131,14 @@ def get_latest_playlist():
 
 
 def get_latest_community_post():
-    url = (
-        "https://www.googleapis.com/youtube/v3/activities"
-        f"?part=snippet&channelId={CHANNEL_ID}&maxResults=10&key={API_KEY}"
+    data = fetch_json(
+        api_url(
+            "activities",
+            part="snippet",
+            channelId=CHANNEL_ID,
+            maxResults="10",
+        )
     )
-    data = fetch_json(url)
     for item in data.get("items", []):
         snippet = item.get("snippet", {})
         if snippet.get("type") == "community":
@@ -129,35 +158,57 @@ def update_readme():
     playlist = get_latest_playlist()
     post = get_latest_community_post()
 
-    replacements = {
-        "{{ video.date }}": str(video.get("date", "N/A")),
-        "{{ video.title }}": str(video.get("title", "N/A")),
-        "{{ video.duration }}": str(video.get("duration", "N/A")),
-        "{{ video.views }}": str(video.get("views", "N/A")),
-        "{{ playlist.title }}": str(playlist.get("title", "N/A")),
-        "{{ playlist.videoCount }}": str(playlist.get("videoCount", "N/A")),
-        "{{ post.text }}": str(post.get("text", "N/A")),
-        "{{ post.date }}": str(post.get("date", "N/A")),
-    }
+    stats_block = f"""<!-- YOUTUBE_STATS:START -->
+## 📊 YouTube Channel Stats
+<p align="center">
+  <img src="https://img.shields.io/youtube/channel/subscribers/{CHANNEL_ID}?style=for-the-badge&label=Subscribers&logo=youtube&color=red" alt="Subscribers">
+  <img src="https://img.shields.io/youtube/channel/views/{CHANNEL_ID}?style=for-the-badge&label=Total%20Views&logo=youtube&color=red" alt="Total views">
+  <img src="https://img.shields.io/youtube/channel/video-count/{CHANNEL_ID}?style=for-the-badge&label=Videos&logo=youtube&color=red" alt="Videos">
+</p>
 
-    for key, value in replacements.items():
-        readme = readme.replace(key, value)
+**Subscribers:** {markdown_text(stats["subscribers"])} · **Views:** {markdown_text(stats["views"])} · **Videos:** {markdown_text(stats["videos"])}
 
-    README_PATH.write_text(readme, encoding="utf-8")
+---
+
+## 🎬 Latest YouTube Video
+| Date | Title | Duration | Views |
+|------|-------|----------|-------|
+| {markdown_text(video["date"])} | {markdown_text(video["title"])} | {markdown_text(video["duration"])} | {markdown_text(video["views"])} |
+
+---
+
+## 📚 Latest Playlist
+- {markdown_text(playlist["title"])} — {markdown_text(playlist["videoCount"])} videos
+
+---
+
+## 📝 Latest Community Post
+> "{markdown_text(post["text"])}"
+*(Posted {markdown_text(post["date"])})*
+<!-- YOUTUBE_STATS:END -->"""
+
+    pattern = r"<!-- YOUTUBE_STATS:START -->.*?<!-- YOUTUBE_STATS:END -->"
+    updated_readme, replacements = re.subn(
+        pattern, stats_block, readme, count=1, flags=re.DOTALL
+    )
+    if replacements != 1:
+        raise RuntimeError("README YouTube stats markers were not found exactly once")
+
+    README_PATH.write_text(updated_readme, encoding="utf-8")
     print("README updated with YouTube stats.")
     print(json.dumps(stats, indent=2))
 
 
 def main() -> int:
     if not API_KEY:
-        print("YOUTUBE_API_KEY is not set. Skipping YouTube stats update.")
-        return 0
+        print("YOUTUBE_API_KEY is not set.", file=sys.stderr)
+        return 1
 
     try:
         update_readme()
-    except Exception as exc:  # pragma: no cover - executed in GitHub Actions
+    except (OSError, RuntimeError, KeyError, IndexError) as exc:
         print(f"Failed to update YouTube stats: {exc}", file=sys.stderr)
-        return 0
+        return 1
 
     return 0
 

@@ -53,30 +53,35 @@ I also want to work as a content creator on [Youtube](https://www.youtube.com/@s
 
 ---
 
+<!-- YOUTUBE_STATS:START -->
 ## 📊 YouTube Channel Stats
 <p align="center">
-  <img src="https://img.shields.io/youtube/channel/subscribers/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Subscribers&logo=youtube&color=red">
-  <img src="https://img.shields.io/youtube/channel/views/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Total Views&logo=youtube&color=red">
-  <img src="https://img.shields.io/youtube/channel/video-count/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Videos&logo=youtube&color=red">
+  <img src="https://img.shields.io/youtube/channel/subscribers/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Subscribers&logo=youtube&color=red" alt="Subscribers">
+  <img src="https://img.shields.io/youtube/channel/views/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Total%20Views&logo=youtube&color=red" alt="Total views">
+  <img src="https://img.shields.io/youtube/channel/video-count/UC3WIwB7nbYMEvWW4CGQGYsA?style=for-the-badge&label=Videos&logo=youtube&color=red" alt="Videos">
 </p>
 
+**Subscribers:** _Updated by GitHub Actions_ · **Views:** _Updated by GitHub Actions_ · **Videos:** _Updated by GitHub Actions_
+
 ---
 
-## 🎬 Latest YouTube Videos
+## 🎬 Latest YouTube Video
 | Date | Title | Duration | Views |
 |------|-------|----------|-------|
-| {{ video.date }} | {{ video.title }} | {{ video.duration }} | {{ video.views }} |
+| _Updated by GitHub Actions_ | _Updated by GitHub Actions_ | _Updated by GitHub Actions_ | _Updated by GitHub Actions_ |
 
 ---
 
-## 📚 Playlists
-- {{ playlist.title }} — {{ playlist.videoCount }} videos
+## 📚 Latest Playlist
+- _Updated by GitHub Actions_ — _Updated by GitHub Actions_ videos
 
 ---
 
 ## 📝 Latest Community Post
-> "{{ post.text }}"
-*(Posted {{ post.date }})*
+> "_Updated by GitHub Actions_"
+*(Posted _Updated by GitHub Actions_)*
+
+<!-- YOUTUBE_STATS:END -->
 
 ---
 
