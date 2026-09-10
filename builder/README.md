@@ -61,6 +61,35 @@ git push
 Project is automatically Hosted on Github Pages. To see [Click here](https://snbhante.github.io/)
 
 
+That command builds the app and copies `dist` into a separate GitHub Pages repository. On Windows, use PowerShell commands because `cp` and `rm` are Unix commands.
+
+1. Clone your Pages repository once:
+
+```sh
+cd $HOME
+git clone https://github.com/snbhante/snbhante.github.io.git
+```
+
+2. Build and publish:
+
+```sh
+cd C:\Users\snbhante\VSCodeProjects\snbhante\builder
+npm run build
+
+Copy-Item -Path .\dist\* -Destination "$HOME\snbhante.github.io" -Recurse -Force
+
+cd "$HOME\snbhante.github.io"
+git add .
+git commit -m "Deploy website"
+git push origin main
+```
+
+Your site should then be available at:
+
+[https://snbhante.github.io/](https://snbhante.github.io/)
+
+The existing `dist` script fails because `cp`, `rm`, and `~/snbhante.github.io` are Unix-style assumptions. You do not need to run `npm run clean`; keeping `dist` locally is harmless. Ensure GitHub Pages is configured to deploy from the main branch root of `snbhante.github.io`.
+
 <br>
 
 ## Credits
